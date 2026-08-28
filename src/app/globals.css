@@ -152,3 +152,14 @@ a {
     animation-delay: 0s !important;
   }
 }
+
+/* Dark/light theme toggle: a circular "reveal" wipes the new theme outward
+   from the toggle button (see ThemeToggle.tsx, which drives the clip-path
+   via a direct WAAPI animation). Disable the browser's default root
+   cross-fade so that clip-path wipe is the only motion — a clean, hard
+   edge expanding across the page instead of a blurry double-exposure. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
