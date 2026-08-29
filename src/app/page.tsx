@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, SectionHeading, Badge } from "@/components/ui";
 import { PageTransition } from "@/components/PageTransition";
@@ -11,6 +12,12 @@ import {
   GithubIcon,
   TerminalGlyph,
 } from "@/components/icons";
+
+export const metadata: Metadata = {
+  verification: {
+    google: "d1d29oE93qTexXYj_etDUtj1DfkWvz_i1yM9DeEaFJY",
+  },
+};
 
 export default function Home() {
   return (
