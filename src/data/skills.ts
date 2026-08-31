@@ -10,7 +10,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Backend & Data",
-    skills: ["Laravel", "PHP", "Go", "MySQL"],
+    skills: ["Laravel", "PHP", "Go", "Fiber", "MySQL", "PostgreSQL"],
   },
   {
     label: "Deployment",

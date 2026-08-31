@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container, PageHeader, SectionHeading, Card } from "@/components/ui";
 import { PageTransition } from "@/components/PageTransition";
 import {
+  awards,
   certificates,
   education,
   experience,
@@ -103,7 +104,29 @@ export default function ExperiencePage() {
         </section>
 
         <section className="border-t border-[var(--border)] py-16 sm:py-20">
-          <SectionHeading index="04" title="Leadership" />
+          <SectionHeading index="04" title="Awards" />
+          <ul className="flex flex-col gap-4">
+            {awards.map((award) => (
+              <li
+                key={award.title}
+                className="flex items-baseline justify-between gap-4 border-b border-[var(--border)] pb-4 last:border-b-0"
+              >
+                <div>
+                  <span className="text-[var(--fg)]">{award.title}</span>
+                  <p className="mt-0.5 text-sm text-[var(--fg-muted)]">
+                    {award.issuer}
+                  </p>
+                </div>
+                <span className="shrink-0 font-mono text-sm text-[var(--fg-subtle)]">
+                  {award.date}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="border-t border-[var(--border)] py-16 sm:py-20">
+          <SectionHeading index="05" title="Leadership" />
           <div className="flex flex-col gap-3 text-[var(--fg-muted)]">
             {leadership.map((item) => (
               <p key={item}>{item}</p>

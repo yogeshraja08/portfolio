@@ -2,7 +2,7 @@ export const experience = [
   {
     company: "ProcessDrive India Pvt. Ltd.",
     location: "Hosur, Tamil Nadu",
-    role: "Junior Developer",
+    role: "Software Developer",
     period: "Sep 2024 — Present",
     summary:
       "Key full-stack developer on RentAsst, an ERP platform for rental businesses covering inventory, invoicing, rental tracking, and order management.",
@@ -26,11 +26,32 @@ export const education = [
 ] as const;
 
 export const certificates = [
-  { title: "UI/UX Design Certificate", issuer: undefined, date: "2025" },
+  {
+    title: "Building with the Claude API",
+    issuer: "Anthropic",
+    date: "2026",
+  },
+  {
+    title: "AI Fluency Framework & Foundations",
+    issuer: "Anthropic",
+    date: "2026",
+  },
+  {
+    title: "Introduction to Model Context Protocol",
+    issuer: "Anthropic",
+    date: "2026",
+  },
+  { title: "UI/UX Design with Figma", issuer: "Udemy", date: "2025" },
+  {
+    title:
+      "International Conference on Recent Trends in Computing and Communication Engineering",
+    issuer: "SIMATS Engineering",
+    date: undefined,
+  },
   {
     title: "Python in Google Colab",
     issuer: "Google Developer Student Club",
-    date: "2024",
+    date: "2023",
   },
   {
     title: "JavaScript Projects",
@@ -52,6 +73,11 @@ export const certificates = [
     issuer: "FutureSkills Prime",
     date: "Oct 6, 2023",
   },
+] as const;
+
+export const awards = [
+  { title: "Best Commitment Award", issuer: "ProcessDrive", date: "Jul 2026" },
+  { title: "Best Student Award", issuer: "Naan Mudhalvan", date: "2024" },
 ] as const;
 
 export const leadership = [

@@ -46,6 +46,23 @@ export function MailIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function PhoneIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.7}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1.2 1.2 0 0 1 1.22-.29c1.35.45 2.8.69 4.28.69a1.2 1.2 0 0 1 1.2 1.2V20.8a1.2 1.2 0 0 1-1.2 1.2C10.9 22 2 13.1 2 3.2A1.2 1.2 0 0 1 3.2 2H7.2a1.2 1.2 0 0 1 1.2 1.2c0 1.48.24 2.93.69 4.28a1.2 1.2 0 0 1-.3 1.22L6.6 10.8Z" />
+    </svg>
+  );
+}
+
 export function GoogleIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>

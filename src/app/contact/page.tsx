@@ -10,6 +10,7 @@ import {
   GoogleIcon,
   LinkedinIcon,
   MailIcon,
+  PhoneIcon,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -23,6 +24,13 @@ const CONTACT_LINKS = [
     value: profile.email,
     href: `mailto:${profile.email}`,
     icon: MailIcon,
+    external: false,
+  },
+  {
+    label: "Phone",
+    value: profile.phone,
+    href: `tel:${profile.phone.replace(/\s+/g, "")}`,
+    icon: PhoneIcon,
     external: false,
   },
   {

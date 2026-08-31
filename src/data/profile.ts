@@ -5,6 +5,7 @@ export const profile = {
   tagline: "Flutter · Laravel · Go — building full-stack products end to end",
   location: "Tamil Nadu, India",
   email: "yogeshraja45@gmail.com",
+  phone: "+91 8667370445",
   links: {
     github: "https://github.com/yogeshraja08/",
     linkedin: "https://www.linkedin.com/in/yogeshraja08/",
