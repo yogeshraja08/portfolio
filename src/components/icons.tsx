@@ -252,7 +252,7 @@ export function LockIcon(props: SVGProps<SVGSVGElement>) {
 /** Decorative terminal-window glyph used as the hero visual (per user's request for an icon rather than a photo). */
 export function TerminalGlyph(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 200 200" fill="none" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 250 250" fill="none" aria-hidden="true" {...props}>
       <rect
         x="10"
         y="10"
