@@ -301,7 +301,7 @@ export function TerminalGlyph(props: SVGProps<SVGSVGElement>) {
         fontSize="15"
         fill="var(--fg-muted)"
       >
-        dev<tspan className="blink-cursor">▌</tspan>
+        software developer<tspan className="blink-cursor">▌</tspan>
       </text>
     </svg>
   );
